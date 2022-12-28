@@ -1,0 +1,7 @@
+from os.path import dirname, join
+current_dir = dirname(__file__)
+file_path = join(current_dir, "test.txt")
+print(file_path)
+with open(file_path, 'r') as f:
+    contents = f.read()
+    print(contents)
